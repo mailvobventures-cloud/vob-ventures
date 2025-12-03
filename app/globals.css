@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --font-sans: var(--font-inter);
+    --font-mono: var(--font-geist-mono);
+    
+    /* Refined professional color palette with more sophisticated tones */
+    --vob-blue: 216 85% 35%;
+    --vob-blue-light: 216 85% 45%;
+    --vob-green: 145 60% 42%;
+    --vob-green-light: 145 60% 52%;
+    --vob-orange: 25 85% 55%;
+    --vob-grey: 220 13% 26%;
+    
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+    --primary: 216 85% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 145 60% 42%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 13% 45%;
+    --accent: 25 85% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 216 85% 35%;
+    --chart-1: 216 85% 35%;
+    --chart-2: 145 60% 42%;
+    --chart-3: 25 85% 55%;
+    --chart-4: 220 13% 26%;
+    --chart-5: 197 37% 24%;
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 220 13% 9%;
+    --foreground: 0 0% 98%;
+    --card: 220 13% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 13% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 216 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 145 60% 52%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 13% 18%;
+    --muted-foreground: 220 13% 65%;
+    --accent: 25 85% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 216 85% 45%;
+    --chart-1: 216 85% 45%;
+    --chart-2: 145 60% 52%;
+    --chart-3: 25 85% 60%;
+    --chart-4: 220 13% 50%;
+    --chart-5: 160 60% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+}
