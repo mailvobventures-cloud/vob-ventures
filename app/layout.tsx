@@ -25,9 +25,6 @@ export const metadata: Metadata = {
     "VOB Ventures"
   ],
   authors: [{ name: "VOB Ventures" }],
-  icons: {
-    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
-  },
   generator: 'v0.app'
 }
 
